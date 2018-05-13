@@ -8,10 +8,7 @@
 
 
 <ion-content>
-  <button ion-item (click)="itemTapped()">
-    Flamengo
-  </button>
-  <button ion-item (click)="itemTapped()">
-    Atlético MG
+  <button *ngFor="let team of teams" ion-item (click)="itemTapped($event, team)">
+    {{team.name}}
   </button>
 </ion-content>
