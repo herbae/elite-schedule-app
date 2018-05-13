@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { TeamsPage } from '../teams/teams';
 
 @Component({
   selector: 'page-tournaments',
@@ -14,4 +15,7 @@ export class TournamentsPage {
     console.log('ionViewDidLoad TournamentsPage');
   }
 
+  itemTapped() {
+    this.navCtrl.push(TeamsPage);
+  }
 }
